@@ -1,27 +1,25 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #0e1117;
-  color: #d1d5db;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
 header {
-  background: linear-gradient(90deg, #111827, #1f2933);
+  background-color: #000;
   padding: 40px 20px;
   text-align: center;
-  border-bottom: 4px solid #f59e0b;
+  border-bottom: 2px solid #fff;
 }
 
 header h1 {
   margin: 0;
-  color: #f59e0b;
   font-size: 2.5rem;
 }
 
 header p {
   margin-top: 10px;
   font-size: 1.1rem;
-  color: #9ca3af;
 }
 
 .section {
@@ -31,35 +29,28 @@ header p {
 }
 
 .section h2 {
-  color: #f59e0b;
-  border-left: 5px solid #f59e0b;
+  border-left: 4px solid #fff;
   padding-left: 15px;
+  margin-bottom: 15px;
 }
 
-.section ul {
-  margin-top: 15px;
-}
-
+.section p,
 .section li {
-  margin: 10px 0;
+  line-height: 1.6;
 }
 
 .section.dark {
-  background-color: #111827;
-  border-top: 1px solid #1f2937;
-  border-bottom: 1px solid #1f2937;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 footer {
-  background-color: #020617;
   text-align: center;
   padding: 25px;
+  border-top: 2px solid #fff;
 }
 
 footer a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #f59e0b;
-  text-decoration: none;
-  font-weight: bold;
+  color: #fff;
+  text-decoration: underline;
 }
