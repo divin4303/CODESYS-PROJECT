@@ -39,7 +39,33 @@
     <img src="FlowDiagram_1.png" alt="Industrial Automation Flow Diagram" class="architecture-diagram">
   </div>
 </section>
+<section id="dashboard-project" style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e1e; color: #f0f0f0; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+    
+    <h2 style="color: #00d4ff; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
+        Industrial Control Dashboard: Node-RED
+    </h2>
 
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: start;">
+        <div style="flex: 1; min-width: 300px;">
+            <p style="line-height: 1.6; text-align: justify; margin-top: 0;">
+                This dashboard utilizes an <strong>OPC UA architecture</strong> to facilitate secure, bi-directional communication between the web-based Node-RED interface and a <strong>CODESYS PLC</strong>. By acting as an OPC UA client, Node-RED enables real-time monitoring and control of industrial process variables.
+            </p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">🔹 <strong>Process Control:</strong> START/STOP functionality and box counting linked directly to PLC registers.</li>
+                <li style="margin-bottom: 10px;">🔹 <strong>Analog Monitoring:</strong> Live setpoint adjustments and sensor feedback via status LEDs.</li>
+                <li style="margin-bottom: 10px;">🔹 <strong>Data Visualization:</strong> High-frequency time-series chart tracking variables between 20-30 units with millisecond precision.</li>
+            </ul>
+        </div>
+
+        <div style="flex: 1; min-width: 300px; background: #252525; padding: 15px; border-radius: 8px; border: 1px solid #444; text-align: center;">
+            <h4 style="margin-top: 0; color: #fff;">System Architecture</h4>
+            <img src="NOde_Red UI.png" alt="OPC UA Architecture Diagram" style="width: 100%; border-radius: 4px; border: 1px solid #555;">
+            <p style="font-size: 0.85rem; color: #888; margin-top: 10px; font-style: italic;">
+                OPC UA Client-Server data flow between Node-RED and CODESYS PLC.
+            </p>
+        </div>
+    </div>
+</section>
 <section class="section">
   <h2>Key Features</h2>
   <ul>
