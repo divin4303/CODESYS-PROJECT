@@ -54,17 +54,3 @@ footer a {
   color: #fff;
   text-decoration: underline;
 }
-
-.diagram-container {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-.architecture-diagram {
-  max-width: 100%;    /* Ensures the image isn't wider than the screen */
-  height: auto;       /* Maintains aspect ratio */
-  border-radius: 8px; /* Softens the corners to match modern UI */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Adds depth */
-  border: 1px solid #444;
-}
