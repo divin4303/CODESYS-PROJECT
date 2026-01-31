@@ -1,78 +1,155 @@
-/* General page styling */
-body {
+/* ===============================
+   Global Reset & Base Styles
+================================ */
+* {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #222;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+/* ===============================
+   Header
+================================ */
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #111;
-  color: #fff;
+  background-color: #111;
 }
 
-/* Section layout */
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   Sections (Text Container)
+================================ */
 .section {
-  max-width: 1000px;   /* same width for text and images */
+  max-width: 1000px;     /* controls text + media width */
   margin: 40px auto;
-  padding: 0 20px;     /* text margins */
+  padding: 0 20px;
 }
 
 .section.dark {
-  background: #1e1e1e;
-  color: #f0f0f0;
+  background-color: #1a1a1a;
   padding: 40px 20px;
 }
 
-/* Headings */
+/* ===============================
+   Headings & Text
+================================ */
 .section h2 {
+  font-size: 1.6rem;
   margin-bottom: 15px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 6px;
 }
 
-/* Images inside sections */
+.section p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.section li {
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   Images (Unified & Responsive)
+================================ */
 .section img {
-  max-width: 100%;     /* never exceed text width */
-  height: auto;        /* keep aspect ratio */
   display: block;
-  margin: 20px auto;   /* center image within text block */
+  max-width: 100%;       /* never exceed text width */
+  height: auto;          /* keep aspect ratio */
+  margin: 25px auto;
 }
 
-/* Video iframe */
+/* Architecture / flow diagram */
+.section img.architecture {
+  max-width: 90%;
+}
+
+/* Dashboard screenshot */
+.section img.dashboard {
+  max-width: 80%;
+}
+
+/* ===============================
+   Video (YouTube iframe)
+================================ */
 .section iframe {
+  display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 850px;
   aspect-ratio: 16 / 9;
   border: none;
-  display: block;
-  margin: 20px auto;
+  margin: 30px auto 15px;
 }
 
-/* Lists */
-.section ul {
-  padding-left: 20px;
-}
-
-/* Caption text */
+/* Video caption */
 .caption {
-  font-size: 0.85rem;
-  color: #888;
   text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
 }
 
-/* Footer */
+/* ===============================
+   Footer
+================================ */
 footer {
   text-align: center;
   padding: 30px 20px;
-  background: #111;
-  color: #fff;
+  background-color: #111;
+  margin-top: 40px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 
 footer a {
   color: #00d4ff;
   text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   Responsive Adjustments
+================================ */
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .section img.architecture,
+  .section img.dashboard {
+    max-width: 100%;
+  }
 }
