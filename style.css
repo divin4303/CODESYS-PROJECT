@@ -77,17 +77,19 @@ header p {
   max-width: 80%;
 }
 
-/* Video */
+/* ===============================
+   Video (YouTube iframe)
+================================ */
 .section iframe {
+  display: block;
   width: 100%;
   max-width: 850px;
   aspect-ratio: 16 / 9;
   border: none;
-  display: block;
   margin: 30px auto 15px;
 }
 
-/* Caption */
+/* Video caption */
 .caption {
   text-align: center;
   font-size: 0.85rem;
