@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -24,97 +25,77 @@
 </section>
 
 <section class="section dark">
-<h2>System Architecture</h2>
-<p>
-  The system consists of a <strong>Raspberry Pi running CODESYS Control</strong>,
-  connected to <strong>Factory I/O</strong> for industrial process simulation.
-  The <strong>PLC logic is developed using Function Block Diagram (FBD) and Structured Text</strong>.
-  <strong>Modbus TCP</strong> is used for communication between CODESYS and Factory I/O,
-  while <strong>OPC UA</strong> is used for communication between Node-RED and CODESYS,
-  with <strong>CODESYS acting as the OPC UA server</strong>.
-  A <strong>Node-RED dashboard</strong> provides real-time monitoring and visualization
-  of the system.
+  <h2>System Architecture</h2>
+  <p>
+    The system consists of a <strong>Raspberry Pi running CODESYS Control</strong>
+    connected to <strong>Factory I/O</strong> for industrial process simulation.
+    PLC logic is developed using <strong>FBD and Structured Text</strong>.
+    <strong>Modbus TCP</strong> enables communication between CODESYS and Factory I/O,
+    while <strong>OPC UA</strong> connects CODESYS with Node-RED.
   </p>
-  <div class="diagram-container">
-    <img src="FlowDiagram_1.png" alt="Industrial Automation Flow Diagram" class="architecture-diagram">
-  </div>
-</section>
-<section id="dashboard-project" style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e1e; color: #f0f0f0; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-    
-    <h2 style="color: #00d4ff; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-        Industrial Control Dashboard: Node-RED
-    </h2>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: start;">
-        <div style="flex: 1; min-width: 300px;">
-            <p style="line-height: 1.6; text-align: justify; margin-top: 0;">
-                This dashboard utilizes an <strong>OPC UA architecture</strong> to facilitate secure, bi-directional communication between the web-based Node-RED interface and a <strong>CODESYS PLC</strong>. By acting as an OPC UA client, Node-RED enables real-time monitoring and control of industrial process variables.
-            </p>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 10px;">🔹 <strong>Process Control:</strong> START/STOP functionality and box counting linked directly to PLC registers.</li>
-                <li style="margin-bottom: 10px;">🔹 <strong>Analog Monitoring:</strong> Live setpoint adjustments and sensor feedback via status LEDs.</li>
-                <li style="margin-bottom: 10px;">🔹 <strong>Data Visualization:</strong> High-frequency time-series chart tracking variables between 20-30 units with millisecond precision.</li>
-            </ul>
-        </div>
-
-        <div style="flex: 1; min-width: 300px; background: #252525; padding: 15px; border-radius: 8px; border: 1px solid #444; text-align: center;">
-            <h4 style="margin-top: 0; color: #fff;">System Architecture</h4>
-            <img src="NOde_Red UI.png" alt="OPC UA Architecture Diagram" style="width: 100%; border-radius: 4px; border: 1px solid #555;">
-            <p style="font-size: 0.85rem; color: #888; margin-top: 10px; font-style: italic;">
-                OPC UA Client-Server data flow between Node-RED and CODESYS PLC.
-            </p>
-        </div>
-    </div>
+  <img src="FlowDiagram_1.png" alt="System Architecture Diagram">
 </section>
+
 <section class="section">
-  <h2>Key Features</h2>
+  <h2>Node-RED Dashboard</h2>
+  <p>
+    The Node-RED dashboard operates as an <strong>OPC UA client</strong>,
+    enabling secure real-time monitoring and control of PLC variables.
+  </p>
+
   <ul>
-    <li>Real-time PLC-based control system</li>
-    <li>Start/Stop and emergency handling</li>
-    <li>Sensor and actuator monitoring</li>
-    <li>Industrial simulation with Factory I/O</li>
-    <li>Scalable Industry 4.0 architecture</li>
+    <li>Start/Stop control and box counting via PLC registers</li>
+    <li>Live analog monitoring with setpoint adjustment</li>
+    <li>High-speed time-series data visualization</li>
   </ul>
+
+  <img src="NOde_Red UI.png" alt="Node-RED Dashboard Interface">
 </section>
 
 <section class="section dark">
-  <h2>Applications</h2>
-  <p>
-    Smart manufacturing, industrial automation training, digital twin systems,
-    and Industry 4.0 learning environments.
-  </p>
+  <h2>Key Features</h2>
+  <ul>
+    <li>Real-time PLC-based control</li>
+    <li>Start/Stop and emergency handling</li>
+    <li>Sensor and actuator monitoring</li>
+    <li>Factory I/O industrial simulation</li>
+    <li>Industry 4.0–ready architecture</li>
+  </ul>
 </section>
 
 <section class="section">
+  <h2>Applications</h2>
+  <p>
+    Smart manufacturing, industrial automation training,
+    digital twin systems, and Industry 4.0 learning environments.
+  </p>
+</section>
+
+<section class="section dark">
   <h2>Future Enhancements</h2>
   <ul>
     <li>Cloud integration using MQTT</li>
-    <li>Predictive maintenance features</li>
-    <li>Alarm and fault detection system</li>
+    <li>Predictive maintenance</li>
+    <li>Alarm and fault detection</li>
     <li>Physical sensor integration</li>
   </ul>
 </section>
-<section id="video-demo" style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e1e; color: #f0f0f0; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-align: center;">
-    
-    <h2 style="color: #00d4ff; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-        Factory I/O & CODESYS Live Demonstration
-    </h2>
 
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid #444;">
-        <iframe 
-            src="https://www.youtube.com/embed/PHjDNwEMvLs" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-            title="PROJECT DEMO" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
-    
-    <p style="font-size: 0.85rem; color: #888; margin-top: 15px; font-style: italic;">
-        Real-time communication between Raspberry Pi (CODESYS) and Factory I/O via Modbus TCP.
-    </p>
+<section class="section">
+  <h2>Live Demonstration</h2>
+
+  <iframe
+    src="https://www.youtube.com/embed/PHjDNwEMvLs"
+    title="Factory I/O & CODESYS Demo"
+    allowfullscreen>
+  </iframe>
+
+  <p class="caption">
+    Real-time communication between Raspberry Pi (CODESYS) and Factory I/O using Modbus TCP.
+  </p>
 </section>
+
 <footer>
   <p>Developed by Divin</p>
   <a href="https://github.com/divin4303/CODESYS-PROJECT" target="_blank">
