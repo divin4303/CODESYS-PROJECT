@@ -1,56 +1,78 @@
+/* General page styling */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
   color: #fff;
 }
 
-header {
-  background-color: #000;
-  padding: 40px 20px;
-  text-align: center;
-  border-bottom: 2px solid #fff;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
+/* Section layout */
 .section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.section h2 {
-  border-left: 4px solid #fff;
-  padding-left: 15px;
-  margin-bottom: 15px;
-}
-
-.section p,
-.section li {
-  line-height: 1.6;
+  max-width: 1000px;   /* same width for text and images */
+  margin: 40px auto;
+  padding: 0 20px;     /* text margins */
 }
 
 .section.dark {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+  background: #1e1e1e;
+  color: #f0f0f0;
+  padding: 40px 20px;
 }
 
+/* Headings */
+.section h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Images inside sections */
+.section img {
+  max-width: 100%;     /* never exceed text width */
+  height: auto;        /* keep aspect ratio */
+  display: block;
+  margin: 20px auto;   /* center image within text block */
+}
+
+/* Video iframe */
+.section iframe {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Lists */
+.section ul {
+  padding-left: 20px;
+}
+
+/* Caption text */
+.caption {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: center;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 25px;
-  border-top: 2px solid #fff;
+  padding: 30px 20px;
+  background: #111;
+  color: #fff;
 }
 
 footer a {
-  color: #fff;
-  text-decoration: underline;
+  color: #00d4ff;
+  text-decoration: none;
 }
