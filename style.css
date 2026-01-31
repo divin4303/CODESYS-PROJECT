@@ -86,7 +86,7 @@ header p {
   max-width: 850px;
   aspect-ratio: 16 / 9;
   border: none;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 /* Video caption */
