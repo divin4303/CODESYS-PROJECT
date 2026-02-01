@@ -31,11 +31,11 @@
 <section class="section dark">
   <h2>System Architecture</h2>
   <p>
-    The system consists of a <strong>Raspberry Pi running CODESYS Control</strong>
-    connected to <strong>Factory I/O</strong> for industrial process simulation.
-    PLC logic is developed using <strong>FBD and Structured Text</strong>.
-    <strong>Modbus TCP</strong> enables communication between CODESYS and Factory I/O,
-    while <strong>OPC UA</strong> connects CODESYS with Node-RED.
+    The control logic is developed using Function Block Diagram (FBD) and Structured Text within the CODESYS environment. 
+    Modbus TCP is used to enable communication between the PLC logic and the Factory I/O simulation. 
+    Unlike high-speed industrial standards like PROFINET, this setup relies on standard TCP, which is 
+    sufficient for learning but can introduce network lag if large files are being handled simultaneously. 
+    This configuration enables a clear study of how data flows among the controller, the simulation, and the Node-RED-based monitoring tools.
   </p>
 
   <img src="FlowDiagram_1.png" alt="System Architecture Diagram">
