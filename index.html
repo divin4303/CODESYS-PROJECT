@@ -17,10 +17,14 @@
 <section class="section">
   <h2>Project Overview</h2>
   <p>
-    This project demonstrates an industrial automation system using
-    <strong>CODESYS PLC programming</strong> on a <strong>Raspberry Pi</strong>,
-    integrated with <strong>Factory I/O</strong> for process simulation and
-    <strong>Node-RED</strong> for monitoring and visualization.
+    This project demonstrates an industrial automation system using CODESYS PLC programming on a Raspberry Pi 4, 
+    integrated with Factory I/O for process simulation and Node-RED for monitoring and visualization. 
+    The system controls a conveyor belt that assembles a base and a lid emitted randomly from an emitter,
+    using a two-axis pick and place unit to position the lid on the base. 
+    Motion is controlled through interactive switches within the Factory I/O environment and a Node-RED HMI connected via OPC UA, 
+    while all system actions and assembly counts are stored in a MySQL database. 
+    The practical part of the project is implemented using the Raspberry Pi 4 and an HC-SR04 ultrasonic sensor for distance detection. 
+    since this is a hobby project focused on understanding functionality rather than a scaled-up industrial application, the HC-SR04 is used even though it is not a SIL-rated device.
   </p>
 </section>
 
